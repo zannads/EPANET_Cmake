@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\repos\EPANET_Cmake\EPANET_Cmake\EPANET_Cmake.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\repos\EPANET_Cmake\EPANET_Cmake\EPANET_Cmake.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\repos\EPANET_Cmake\EPANET_Cmake\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{C6639DA7-5D4B-3A71-A160-2AFE3F0BDE82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{DCAF4D4D-9AF9-320D-93AC-B3D532FD21AB}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
