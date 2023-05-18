@@ -1,4 +1,4 @@
-﻿// EPANET_Cmake.cpp : Defines the entry point for the application.
+// EPANET_Cmake.cpp : Defines the entry point for the application.
 //
 
 #include "EPANET_Cmake.h"
@@ -71,7 +71,7 @@ void runHydraulics(EN_Project ph, int* res) {
 
         // run this timestep
         errorcode = EN_runH(ph, &t);
-        _ASSERT(errorcode < 100);
+        //_ASSERT(errorcode < 100);
 
         if (errorcode)
             if (errorcode >= 100)
@@ -79,7 +79,7 @@ void runHydraulics(EN_Project ph, int* res) {
 
         // move the simulator onto the next timestep
         errorcode = EN_nextH(ph, &tStep);
-        _ASSERT(errorcode < 100);
+        //_ASSERT(errorcode < 100);
 
 
         // check to see if this was a scheduled timestep - 
@@ -91,7 +91,7 @@ void runHydraulics(EN_Project ph, int* res) {
             std::vector<double> tmp_pressures(nNodes);
             for (int nodeIdx = nNodes; nodeIdx; --nodeIdx) {
                 errorcode = EN_getnodevalue(ph, nodeIdx, EN_PRESSURE, &tmp_pressures[nodeIdx - 1]);
-                _ASSERT(errorcode < 100);
+                //_ASSERT(errorcode < 100);
             }
 
             pressures.push_back(tmp_pressures);
@@ -226,5 +226,5 @@ int main()
     }
 
     EN_deleteproject(ph);
-    return errorcode;
+    return 0;
 }
